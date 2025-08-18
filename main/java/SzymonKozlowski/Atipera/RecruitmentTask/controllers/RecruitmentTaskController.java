@@ -1,7 +1,7 @@
 package SzymonKozlowski.Atipera.RecruitmentTask.controllers;
 
 import SzymonKozlowski.Atipera.RecruitmentTask.Dtos.RepositoryDto;
-import SzymonKozlowski.Atipera.RecruitmentTask.services.GithubService;
+import SzymonKozlowski.Atipera.RecruitmentTask.services.RecruitmentTaskService;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -12,16 +12,16 @@ import java.util.List;
 
 @RestController
 @RequestMapping(value = "/api/repositories", produces = MediaType.APPLICATION_JSON_VALUE)
-public class GithubController {
+public class RecruitmentTaskController {
 
-    private final GithubService githubService;
+    private final RecruitmentTaskService recruitmentTaskService;
 
-    public GithubController(GithubService githubService) {
-        this.githubService = githubService;
+    public RecruitmentTaskController(RecruitmentTaskService recruitmentTaskService) {
+        this.recruitmentTaskService = recruitmentTaskService;
     }
 
     @GetMapping("/{username}")
     public List<RepositoryDto> getUserRepositories(@PathVariable String username) {
-        return githubService.getUserRepositories(username);
+        return recruitmentTaskService.getUserRepositories(username);
     }
 }
