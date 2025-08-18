@@ -1,4 +1,4 @@
-package SzymonKozlowski.Atipera.RecruitmentTask.exceptions;
+package SzymonKozlowski.Atipera.RecruitmentTask.Dtos;
 
 import lombok.Data;
 
