@@ -1,14 +1,5 @@
 package SzymonKozlowski.Atipera.RecruitmentTask.Dtos;
 
-import lombok.Data;
+public record ErrorResponse(int status, String message) {
 
-@Data
-public class ErrorResponse {
-    private int status;
-    private String message;
-
-    public ErrorResponse(int status, String message){
-        this.status = status;
-        this.message = message;
-    }
 }
