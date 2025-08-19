@@ -16,7 +16,7 @@ If something goes wrong, the API returns a error in JSON format:
 #### 1. Clone the repository
 
 ```bash
-git clone https://github.com/https://github.com/SzymonKozlowski1092/RecruitmentTask.git
+git clone https://github.com/SzymonKozlowski1092/RecruitmentTask.git
 cd RecruitmentTask
 ```
 #### 2. Configuration
