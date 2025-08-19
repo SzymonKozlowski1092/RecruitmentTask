@@ -71,6 +71,10 @@ Run tests with:
   ./mvnw test
 ```
 
+## Notes
+- Pagination is not supported.
+- Implementation is based on RestClient introduced in Spring Boot 3.2.
+- Exceptions are handled globally with @RestControllerAdvice.
 
 ## Authors
 
